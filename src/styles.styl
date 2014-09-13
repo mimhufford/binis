@@ -1,6 +1,10 @@
 silver = #eaeaea
 navy   = #001F3F
 
+*
+	font-family Overlock !important
+	font-weight bold !important
+
 section, footer, header
 	padding-top 40px
 	padding-bottom 50px
@@ -19,3 +23,9 @@ blockquote
 		content '\201C'   // nice curly left quote
 	&::after
 		content '\201D'   // nice curly right quote
+
+	&::before, &::after
+		font-size 25px
+		padding 3px
+		position relative
+		top 3px

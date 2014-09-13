@@ -1,3 +1,7 @@
+* {
+  font-family: Overlock !important;
+  font-weight: bold !important;
+}
 section,
 footer,
 header {
@@ -19,4 +23,11 @@ blockquote::before {
 }
 blockquote::after {
   content: '\201D';
+}
+blockquote::before,
+blockquote::after {
+  font-size: 25px;
+  padding: 3px;
+  position: relative;
+  top: 3px;
 }
