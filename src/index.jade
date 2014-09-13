@@ -5,7 +5,7 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
         link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
         link(rel="stylesheet", href="styles.css")
-    body.text-center
+    body
         header
             .container
                 h1 BONDIG
@@ -13,45 +13,56 @@ html
             section
                 .container
                     .row
-                        .col-sm-6
+                        .col-sm-4.col-lg-3
                             h1 Who wank?
                             p We're just a bunch'o'cats that'll make stuff for you in exchange for 500 paand.
-                        .col-sm-6
-                            h1 Here's some shit we've done
-                            h4 (in a nice swishy thing, link to a separate page when there's more)
-                            p: a(href="http://jam.com", target="_blank") jam for dayyzz
-                            p: a(href="http://kkc.com", target="_blank") kkcupcakes
+                            p Founded in 2014 and offering you shit on the cheap whilst we're still new even though we'll make some pretty good crap for you.
+                            p Based in south yorkshire, tons of experience if you count eating peanuts.
+                        .col-sm-7.col-sm-offset-1.col-lg-8
+                            h1.visible-xs Shit we've done
+                            img.img-responsive(src="http://lorempixel.com/750/375")
             section
-                .container
+                .container.text-center
                     h1 Services
-                    h4 probably put this in a nice easy to understand table
+                    p.lead.text-muted We don't wanna confuse you so here's what we do and how menny penny
+                    p (unless it's a terrible idea to make this public)
                     .row
-                        .col-sm-6
+                        .col-sm-4
                             h2 Design
                             p full shebang 500 paand
                             p logo 500 paand
                             p binis cards? 500 paand
+                            p use own assets? 500 paand
                             p help me marion, burger?
-                        .col-sm-6
+                        .col-sm-4
                             h2 Development
                             p static pages 500 paand each
                             p dynamic shit + 500 paands
                             p CMS integration 500 paand
+                            p optimised for search engines
+                            p responsive - desktop and mobile
+                        .col-sm-4
+                            h2 Other stuff
+                            p apps
+                            p games
+                            p custom typography
+                            p swearing
+                            p mucking about
             section
-                .container
+                .container.text-center
                     h1 Meet the twats
                     .row
                         .col-sm-6
                             h2 Marion
-                            p I make pretty things
-                            .profile
-                                img(src="http://lorempixel.com/300/300/people")
+                            p.lead.text-muted makes the pretty things
+                            img(src="http://lorempixel.com/300/300/people")
+                            blockquote I studied business media or something then some arty stuff
                         .col-sm-6
                             h2 Mim
-                            p I make stuff work
-                            .profile
-                                img(src="http://lorempixel.com/300/300/people")
+                            p.lead.text-muted makes stuff work
+                            img(src="http://lorempixel.com/300/300/animals")
+                            blockquote I'm a software engineer and an all round dildo
         footer
-            .container
+            .container.text-center
                 p contact us ya buggers
                 a(href="mailto:info@bondig.co.uk", target="_blank") info@bondig.co.uk

@@ -1,1 +1,22 @@
-section,footer,header{padding-top:50px;padding-bottom:50px}header{background:#001f3f;color:#fff}main > section:nth-child(odd){background:#eaeaea}
+section,
+footer,
+header {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+header {
+  background: #001f3f;
+  color: #fff;
+}
+main > section:nth-child(odd) {
+  background: #eaeaea;
+}
+blockquote {
+  border: none;
+}
+blockquote::before {
+  content: '\201C';
+}
+blockquote::after {
+  content: '\201D';
+}

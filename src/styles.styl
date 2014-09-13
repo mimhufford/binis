@@ -1,8 +1,8 @@
-silver =  #eaeaea
-navy =    #001F3F
+silver = #eaeaea
+navy   = #001F3F
 
 section, footer, header
-	padding-top 50px
+	padding-top 40px
 	padding-bottom 50px
 
 header 
@@ -11,3 +11,11 @@ header
 
 main > section:nth-child(odd)
 	background silver
+
+blockquote
+	border none
+
+	&::before
+		content '\201C'   // nice curly left quote
+	&::after
+		content '\201D'   // nice curly right quote
