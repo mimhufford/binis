@@ -1,0 +1,51 @@
+@import "libs/bootstrap/bootstrap.less";
+@import "libs/animate/animate.less";
+
+@silver: #eaeaea;
+@navy  : #001F3F;
+
+header {
+	background: @navy;
+	color: white;
+}
+
+h1 {
+	margin: 30px 0;
+}
+
+main > section, footer {
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+
+main > section:nth-child(odd) {
+	background: @silver;
+}
+
+#intro a {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#team blockquote {
+	border: none;
+
+	&::before {
+		content: '\201C';   // nice curly left quote
+	}
+
+	&::after {
+		content: '\201D';   // nice curly right quote
+	}
+
+	&::before, &::after {
+		font-size: 25px;
+		padding: 3px;
+		position: relative;
+		top: 3px;
+	}
+}
+
+footer {
+	padding-top: 40px;
+}
