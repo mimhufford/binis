@@ -4,16 +4,16 @@ html
         title BONDIG
         meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
         link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Overlock:400,700")
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
         link(rel="stylesheet", href="styles.css")
     body.text-center
         header
-            .container
-                h1 MMmMmMm
+            h1 MMmMmMm
         //- nav.navbar.navbar-default(role="navigation")
         //-     .container
         //-         .navbar-header
-        //-             a.navbar-brand(href="#") MMmMmMm
-        //-         .dunno
+        //-             a(href="#").navbar-brand MMmMmMm
+        //-         .links
         //-             ul.nav.navbar-nav.navbar-right
         //-                 li: a(href="#services") What
         //-                 li: a(href="#method") How
@@ -31,61 +31,77 @@ html
                     h1 What we can do with you...
                     .row
                         .col-sm-6
-                            img.img-circle(src="http://lorempixel.com/150/150/nightlife")
+                            i.fa.fa-5x.fa-inverse.fa-paint-brush
                             h2 Design
-                            ul.list-group
-                                li.list-group-item full shebang 500 paand
-                                li.list-group-item logo 500 paand
-                                li.list-group-item binis cards? 500 paand
-                                li.list-group-item use own assets? 500 paand
-                                li.list-group-item WordPress theming?
-                                li.list-group-item flyers, posters
-                                li.list-group-item custom typography
-                                li.list-group-item print
+                            .row
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-thumbs-up
+                                        p Branding
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-at
+                                        p Marketing
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-font
+                                        p Typography
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-newspaper-o
+                                        p Print
                         .col-sm-6
-                            img.img-circle(src="http://lorempixel.com/150/150/transport")
+                            i.fa.fa-5x.fa-inverse.fa-code
                             h2 Development
-                            ul.list-group
-                                li.list-group-item static pages 500 paand each
-                                li.list-group-item dynamic shit + 500 paands
-                                li.list-group-item CMS integration 500 paand
-                                li.list-group-item optimised for search engines
-                                li.list-group-item desktop, tablet, and mobile
-                                li.list-group-item native mobile apps
-                                li.list-group-item mobile games
-                                li.list-group-item Database + api
+                            .row
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-newspaper-o
+                                        p CMS integration
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-search
+                                        p Optimised for search engines
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-mobile
+                                        p Desktop, tablet, and mobile
+                                .col-xs-6
+                                    .box
+                                        i.fa.fa-3x.fa-inverse.fa-credit-card
+                                        p E-commerce
             section#method
                 .container
                     h1 What you can expect...
                     .row
                         .col-sm-6.col-md-4
                             .box
-                                img.img-circle(src="http://lorempixel.com/150/150/cats")
+                                i.fa.fa-5x.fa-inverse.fa-slideshare
                                 h2 Agile development
                                 p We like to keep you involved in the project as much as possible, from concept to launch. Offering prototypes and regular feedback meetings we can aim straight for your perfect product.
                         .col-sm-6.col-md-4
                             .box
-                                img.img-circle(src="http://lorempixel.com/150/150/food")
+                                i.fa.fa-5x.fa-inverse.fa-html5
                                 h2 Modern values
                                 p With our finger always on the pulse, we choose from a range of cutting edge technologies and workflows to produce a quality product for you more quickly than ever possible before.
                         .col-sm-6.col-md-4
                             .box
-                                img.img-circle(src="http://lorempixel.com/150/150/city")
+                                i.fa.fa-5x.fa-inverse.fa-compress
                                 h2 Optimised content
-                                p The user experience is an integral part of any product and a huge part of that is perceived waiting time. We use optimisation techniques on all content to load lightning fast, even on mobile!
+                                p The user experience is an integral part of any product and a huge part of that is perceived waiting time. We use advanced optimisation techniques on all content to load lightning fast, even on mobile!
                         .col-sm-6.col-md-4
                             .box
-                                img.img-circle(src="http://lorempixel.com/150/150/nightlife")
+                                i.fa.fa-5x.fa-inverse.fa-cloud
                                 h2 Cloud hosting
-                                p We favour cloud based hosting to offer you the most secure and simple experience available. We understand this isn't for everyone thought and are happy to integrate into your existing setup.
+                                p We favour cloud based hosting to offer you the most secure and simple experience available. We understand this isn't for everyone though and are happy to integrate into your existing setup.
                         .col-sm-6.col-md-4
                             .box
-                                img.img-circle(src="http://lorempixel.com/150/150/abstract")
+                                i.fa.fa-5x.fa-inverse.fa-users
                                 h2 Users first
-                                p Before starting we like to get involved with users, finding out what they want and how they think is key to producing a great product.
+                                p Before starting we like to get involved with the users. Finding out how they think and what they want help us to produce a great personal product.
                         .col-sm-6.col-md-4
                             .box
-                                img.img-circle(src="http://lorempixel.com/150/150/transport")
+                                i.fa.fa-5x.fa-inverse.fa-line-chart
                                 h2 Data analytics
                                 p After launching you'll need to keep an eye on your users' changing needs. With easy to understand analytics you'll have great insights into improving your relationship with the users.
             section#team
