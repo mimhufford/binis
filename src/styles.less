@@ -2,7 +2,7 @@
 @import "libs/animate/animate.less";
 
 @silver: #f2f2f2;
-@navy  : #337;
+@navy  : #363847;
 
 header {
 	background: @navy;
@@ -11,6 +11,13 @@ header {
 	h1 {
 		margin: 0;
 		padding: 40px;
+		font-size: 7em;
+		font-weight: 300;
+
+		:first-child {
+			margin-left: -7px;
+			position: absolute;
+		}
 	}
 }
 
@@ -25,10 +32,6 @@ h1 {
 main > section, footer {
 	padding-top: 10px;
 	padding-bottom: 60px;
-}
-
-main > section:nth-child(odd) {
-	background: @silver;
 }
 
 i {
@@ -48,9 +51,12 @@ i {
 }
 
 #intro {
-	background: url("http://lorempixel.com/1920/540") no-repeat center center;
+	background-color: @navy;
+	background-image: url("title.png");
+	background-repeat: no-repeat;
+	background-position: center top;
 	color: white;
-	padding: 100px 0;
+	padding-top: 450px;
 
 	a {
 		margin: 40px 0 0;
@@ -58,10 +64,13 @@ i {
 }
 
 #services {
+	background: @silver;
+
 	.box {
-		background: @silver;
+		background: white;
 		padding: 30px 20px 0;
 		margin-bottom: 30px;
+		min-height: 300px;
 
 		p {
 			margin-top: 20px;
@@ -71,6 +80,8 @@ i {
 }
 
 #method {
+	background: @silver;
+
 	p {
 		margin-top: 20px;
 		margin-bottom: 40px;
