@@ -21,10 +21,6 @@ header {
 	}
 }
 
-nav.navbar {
-	border-width: 0;
-}
-
 h1 {
 	margin: 40px 0;
 }
@@ -55,6 +51,7 @@ i {
 	background-image: url("title.png");
 	background-repeat: no-repeat;
 	background-position: center top;
+
 	color: white;
 	padding-top: 450px;
 
@@ -63,32 +60,18 @@ i {
 	}
 }
 
-#services {
-	background: @silver;
-
-	.box {
-		background: white;
-		padding: 30px 20px 0;
-		margin-bottom: 30px;
-		min-height: 300px;
-
-		p {
-			margin-top: 20px;
-			padding-bottom: 35px;
-		}
-	}
-}
-
-#method {
+#services, #method {
 	background: @silver;
 
 	p {
 		margin-top: 20px;
-		margin-bottom: 40px;
+		padding-bottom: 40px;
 	}
 
 	.box {
-		min-height: 420px;
+		@media (min-width: @screen-sm-min) {
+			min-height: 415px;
+		}
 		padding: 30px 20px 0;
 		margin-bottom: 30px;
 		background: white;
@@ -108,6 +91,7 @@ i {
 
 	&::before, &::after {
 		font-size: 25px;
+		line-height: 25px; // set to font-size so it doesn't make the last line have a gap
 		padding: 3px;
 		position: relative;
 		top: 3px;
