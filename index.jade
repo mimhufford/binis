@@ -1,0 +1,34 @@
+doctype html
+html(ng-app='mim')
+    head
+        base(href="/")
+
+        title MMAKE
+
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.js")
+        script(src="app.min.js")
+
+        link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600")
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="styles.css")
+
+    body.text-center
+        header
+            a(href="#/home")
+                h1.animated.fadeInDown
+                    span M
+                    span.sec M
+                    span AKE
+
+        nav
+            a(href="#/work") work
+
+        main.ng-view(autoscroll="true")
+
+        footer
+            .container
+                p contact us ya buggers
+                a(href="mailto:info@mmake.uk", target="_blank") info@mmake.uk
