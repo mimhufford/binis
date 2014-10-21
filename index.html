@@ -1,1 +1,9 @@
-<!DOCTYPE html><html ng-app="mim"><head><base href="/binis/"><title>MMAKE</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.js"></script><script src="app.min.js"></script><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"><link rel="stylesheet" href="styles.css"></head><body class="text-center"><header><a href="#/home"><h1 class="animated fadeInDown"><span>M</span><span class="sec">M</span><span>AKE</span></h1></a></header><nav><a href="#/work">work</a></nav><main autoscroll="true" class="ng-view"></main><footer><div class="container"><p>contact us ya buggers</p><a href="mailto:info@mmake.uk" target="_blank">info@mmake.uk</a></div></footer></body></html>
+---
+layout: default
+---
+
+<ul>
+    {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
