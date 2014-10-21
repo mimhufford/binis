@@ -1,8 +1,5 @@
----
-layout: post
----
-
 this is my first post
-this better fucking work
+and paragraphs just carry on
+unless you do a space in between
 
 does this make a separate paragraph?

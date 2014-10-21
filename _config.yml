@@ -1,0 +1,7 @@
+defaults:
+    -
+        scope:
+            path: ""           # everything
+            type: "posts"      # but just posts
+        values:
+            layout: "post"     # use post layout
