@@ -1,6 +1,6 @@
 ---
-title: KKKupkakes
-image: img/portfolio/jam/tile.jpg
+title: MLS Design
+image: img/portfolio/mls/tile.png
 types: Branding, Marketing, Web design
 ---
 
@@ -9,4 +9,4 @@ We made a load of stuff for them including some racist propaganda.
 Loads of prototypes and shit, it was really fun, we loved it, etc.
 Super great time, have a look!
 
-![description of image](http://lorempixel.com/960/500)
+![Design stage 1](http://lorempixel.com/960/500)

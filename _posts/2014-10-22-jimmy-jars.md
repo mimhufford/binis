@@ -1,0 +1,12 @@
+---
+title: Jimmy's Jars
+image: img/portfolio/jam/tile.jpg
+types: Branding, Marketing, Web design
+---
+
+Jimmy's Jars (KKKupkakes) are a racist organisation specialising in wedding snacks.
+We made a load of stuff for them including some racist propaganda.
+Loads of prototypes and shit, it was really fun, we loved it, etc.
+Super great time, have a look!
+
+![description of image](http://lorempixel.com/960/500)
