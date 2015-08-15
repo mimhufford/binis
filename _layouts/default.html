@@ -7,12 +7,9 @@
   </head>
   <body>
     {% for file in site.static_files %}
-      {% assign path = file.path | slice: 1, 7 %}
-      {% if path == "cutting" %}
-        <img src="/jekyll-test{{ file.path }}" alt="" />
-      {% endif %}
+      {{ file.path | slice: 1, 7 }}<br/>
     {% endfor %}
-    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/>
     <header>
       zoe genders
     </header>
