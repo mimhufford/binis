@@ -7,8 +7,8 @@
   </head>
   <body>
     {% for file in site.static_files %}
-      {{ file.path }}
-      {{ file.extname }}
+      {{ file.path }} - {{ file.extname }}
+      <br/>
     {% endfor %}
     <header>
       zoe genders
