@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
   <body>
+    {% for file in site.static_files %}
+      {{ file.path }}
+      {{ file.extname }}
+    {% endfor %}
     <header>
       zoe genders
     </header>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Home</a></li>
-        <li><a href="cutting">Paper Cutting</a></li>
-        <li><a href="set-design">Set Design</a></li>
+        <li><a href="/cutting">Paper Cutting</a></li>
+        <li><a href="/set-design">Set Design</a></li>
       </ul>
     </nav>
     <main>
