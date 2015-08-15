@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   </head>
   <body>
-    {% for file in site.static_files %}
-      {% assign path = file.path | slice: 1, 7 %}
-      {{path}}
-      {% if path == "cutting" %}
+    {% for file in site.static_files -%}
+      {% assign path = file.path | slice: 1, 7 -%}
+      {% if path == "cutting" -%}
+        {{path}}
         <img src="/jekyll-test{{ file.path }}" alt="" />
-      {% endif %}
-    {% endfor %}
+      {% endif -%}
+    {% endfor -%}
     <br/><br/><br/><br/><br/>
     <header>
       zoe genders
