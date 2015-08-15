@@ -7,7 +7,6 @@
   </head>
   <body>
     {% for file in site.static_files %}
-      {{ file.path }} - {{ file.path | slice: 1, 7 }}<br/>
       {% assign path = file.path | slice: 1, 7 %}
       {{path}}
       {% if path == "cutting" %}
