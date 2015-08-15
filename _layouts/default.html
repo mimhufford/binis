@@ -8,7 +8,7 @@
   <body>
     {% for file in site.static_files %}
       {{ file.path | slice: 1, 10 }}
-      {% if file.extname == ".jpg" and {{ file.path | slice: 1, 10 }} == "set-design" %}
+      {% if file.extname == ".jpg" and file.path | slice: 1, 10 == "set-design" %}
         <img src="/jekyll-test{{ file.path }}" alt="" />
         <br/>
       {% endif %}
