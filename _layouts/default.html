@@ -7,6 +7,7 @@
   </head>
   <body>
     {% for file in site.static_files %}
+      {{ file.path }} - {{ file.path | slice: 1, 7 }}<br/>
       {% assign path = file.path | slice: 1, 7 %}
       {% if path == "cutting" %}
         <img src="/jekyll-test{{ file.path }}" alt="" />
