@@ -7,9 +7,11 @@
   </head>
   <body>
     {% for file in site.static_files %}
-      {{ file.path }} - {{ file.extname }}
-      <br/>
+      {% if file.extname == ".jpg" %}
+        <img src="/jekyll-test/{{ file.path }}" alt="" />
+        <br/>
     {% endfor %}
+    <br/><br/><br/><br/><br/>
     <header>
       zoe genders
     </header>
