@@ -7,7 +7,6 @@
   </head>
   <body>
     {% for file in site.static_files %}
-      test - {{ {{file.path}}.indexOf("set-design") }}<br/>
       {% if file.extname == ".jpg" and file.path.indexOf("set-design") == 1  %}
         <img src="/jekyll-test{{ file.path }}" alt="" />
         <br/>
