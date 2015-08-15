@@ -10,7 +10,7 @@
       {% if file.path | slice: 1, 10 == "set-design" %}
         <img src="/jekyll-test{{ file.path }}" alt="" />
       {% endif %}
-      {% if file.path | slice: 1, 7 == "cutting" %}
+      {% if {{file.path}} | slice: 1, 7 == "cutting" %}
         <img src="/jekyll-test{{ file.path }}" alt="" />
       {% endif %}
     {% endfor %}
